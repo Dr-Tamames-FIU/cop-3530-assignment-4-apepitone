@@ -1,7 +1,7 @@
 package Dictionary;
 import java.io.*;
 import java.util.*;
-import java.util.Arrays;
+
 import List.MyLinkedList;
 import List.MySortedLinkedList;
 
@@ -61,6 +61,10 @@ public class RhymingDict {
     // ********** TO DO 2: Store a rhymeGroup (key) and word (value) in the Dictionary (hashtable) **********
     public static void storeRhyme(DictionaryInterface rhymingDict, String line) {
 
+        String rhymeGroup = getRhymeGroup(line);
+        String word = getWord(line);
+    
+        rhymingDict.put(rhymeGroup, word);
 
     }
 
@@ -123,6 +127,9 @@ public class RhymingDict {
 
     // ********** TO DO #3: Remove any of the unrhymables **********
     public static void removeUnrhymables(DictionaryInterface rhymingDict) {
+
+
+        
 
     }
 
